@@ -3,7 +3,7 @@ function Student(){
 
     return(
         <>
-
+            
         </>
     )
  }
