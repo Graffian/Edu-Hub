@@ -8,21 +8,26 @@ function Navbar(){
       if (location.pathname == "/Student"){
         return (
           <nav className="side-nav">
-            <p>PROFILE</p>
-            <p>COURSES</p>
-            <p>YOUR COURSES</p>
-            <p>COURSE MATERIALS</p>
-            <p>RECORDED LECTURES</p>
+            <p className="side-nav-item">PROFILE</p>
+            <p className="side-nav-item">COURSES</p>
+            <p className="side-nav-item">YOUR COURSES</p>
+            <p className="side-nav-item">COURSE MATERIALS</p>
+            <p className="side-nav-item">RECORDED LECTURES</p>
           </nav>
         )
-      }else{
+      }else if(location.pathname == "/"){
         return (
-          <nav className="side-nav">
-          <p>PROFILE</p>
-          <p>CREATE A COURSE</p>
-          <p>CREATED COURSES</p>
-          <p>UPLOAD COURSE MATERIALS</p>
-          <p>UPLOAD RECORDED LECTURES</p>
+          <></>
+        )
+      }
+      else{
+        return(
+        <nav className="side-nav">
+          <p className="side-nav-item">PROFILE</p>
+          <p className="side-nav-item">CREATE A COURSE</p>
+          <p className="side-nav-item">CREATED COURSES</p>
+          <p className="side-nav-item">UPLOAD COURSE MATERIALS</p>
+          <p className="side-nav-item">UPLOAD RECORDED LECTURES</p>
         </nav>
         )
       }
@@ -30,9 +35,9 @@ function Navbar(){
     return(
         <>
         <nav className='nav-bar'>
-        <span onClick={sideNavButton}>
+        {/* <span onClick={sideNavButton}>
           <img src={Menu} alt="menu-icon" />
-        </span>
+        </span> */}
         <p className ='app-title'>EDU - HUB</p>
         <div className ='nav-div'>
           <p className ='home-nav'>HOME</p>
