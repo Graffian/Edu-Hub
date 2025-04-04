@@ -14,6 +14,9 @@ function App() {
       </div>
     </nav>
     <Login/>
+    <footer>
+      2025 Graffian. All rights reserved.
+    </footer>
     </>
   )
 }

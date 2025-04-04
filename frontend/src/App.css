@@ -32,3 +32,15 @@ p{
   gap: 2em;
   align-items: center;
 }
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
+  text-align: center;
+  color: gold;
+  font: inherit;
+  font-weight: 550;
+  padding-block: 25px;
+}

@@ -9,7 +9,8 @@
     width: 500px;
     min-height: 200px;
     border-radius: 15px;
-    background-color : hsl(120, 100%, 25%);
+    box-shadow: 5px 5px 10px #333333;
+    background-image : linear-gradient(to bottom right, hsl(120, 100%, 25%), hsl(191, 100%, 25%) );
     flex-direction: column;
     gap:60px;
 }
@@ -29,7 +30,10 @@
     outline: 0;
     border-radius: 6px;
     background-color: #eeeeee66;
-    padding: 5px 15px;
+    width: 100%;
+    font: inherit;
+    padding: 10px 25px;
+    color: white;
 }
 ::placeholder{
     color: white;
@@ -49,6 +53,7 @@
     font: inherit;
     border: 0;
     outline: 0;
+    font-weight: 600;
     color: hsl(120, 100%, 25%);
     transition: background-color 0.3s, color 0.3s ;
 }
