@@ -1,26 +1,24 @@
 import "./Navbar.css"
 import Menu from "../../assets/menu.svg"
-import {useLocation} from "react-router-dom"
+import {useLocation,useNavigate} from "react-router-dom"
 
 function Navbar(){
+  const navigate = useNavigate()
   const location = useLocation()
     function sideNavButton(){
-      if (location.pathname == "/Student"){
+      if (location.pathname == "/Student" || location.pathname == "/Student/Profile"){
         return (
           <nav className="side-nav">
-            <p className="side-nav-item">PROFILE</p>
-            <p className="side-nav-item">COURSES</p>
-            <p className="side-nav-item">YOUR COURSES</p>
-            <p className="side-nav-item">COURSE MATERIALS</p>
-            <p className="side-nav-item">RECORDED LECTURES</p>
+            <p onClick= {()=>{navigate("/Student/Profile")}} className="side-nav-item">PROFILE</p>
+            <p onClick= {()=>{navigate("/Student/Courses")}} className="side-nav-item">COURSES</p>
+            <p onClick= {()=>{navigate("/Student/Your-Courses")}} className="side-nav-item">YOUR COURSES</p>
+            <p onClick= {()=>{navigate("/Student/Course-Material")}} className="side-nav-item">COURSE MATERIALS</p>
+            <p onClick= {()=>{navigate("/Student/Recorded-Lectures")}} className="side-nav-item">RECORDED LECTURES</p>
           </nav>
         )
-      }else if(location.pathname == "/"){
-        return (
-          <></>
-        )
       }
-      else{
+      
+      else if (location.pathname == "/Teacher"){
         return(
         <nav className="side-nav">
           <p className="side-nav-item">PROFILE</p>
@@ -35,9 +33,6 @@ function Navbar(){
     return(
         <>
         <nav className='nav-bar'>
-        {/* <span onClick={sideNavButton}>
-          <img src={Menu} alt="menu-icon" />
-        </span> */}
         <p className ='app-title'>EDU - HUB</p>
         <div className ='nav-div'>
           <p className ='home-nav'>HOME</p>

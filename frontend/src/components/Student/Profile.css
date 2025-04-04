@@ -1,0 +1,90 @@
+.entire-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:50px;
+}
+.profile-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-left: 280px;
+}
+label{
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+.profile-details-left{
+    padding-top: 100px;
+}
+.profile-details-right{
+    padding-top: 100px;
+}
+.profile-title{
+    font-size: 1.6em;
+    color : hsl(168, 100%, 25%);
+    padding-top: 150px;
+}
+input{
+    outline: none;
+    background-color:hsl(168, 100%, 25%) ;
+    color:gold;
+    border-radius: 6px;
+}
+img{
+    display: inline-block;
+    border-radius: 50%;
+}
+.img-span{
+    position: relative;
+    padding-top: 100px;
+}
+.edit-icon{
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left:140px;
+    bottom:20px;
+}
+.info-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 300px;
+    gap:60px;
+    margin-top: 0;
+}
+.course-text{
+    color: hsl(168, 100%, 25%);
+    font-size: 1.5em;
+}
+.course-evaluation{
+    color: hsl(168, 100%, 25%);
+    font-size: 1em;
+    margin-top: 0;
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 300px;
+}
+.save-button{
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: hsl(168, 100%, 25%) ;
+    color: gold;
+    cursor: pointer;
+}
