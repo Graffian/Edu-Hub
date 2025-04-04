@@ -5,13 +5,13 @@
     align-items: center;
     margin-inline: auto;
     margin-top: 20vh;
-    border: 2px solid red;
-    min-width: (500px, 75vw);
-    min-height: (200px, 50vh);
+    /* border: 2px solid red; */
+    width: 500px;
+    min-height: 200px;
     border-radius: 15px;
-    background-color : green;
+    background-color : hsl(120, 100%, 25%);
     flex-direction: column;
-    gap:20px;
+    gap:60px;
 }
 .Credentials-div{
     display: flex;
@@ -20,7 +20,9 @@
     align-items: center;
     flex-direction: column;
     width: 80%;
-    height: ;
+}
+.Login-text{
+    font-size: 2em;
 }
 .username-input, .password-input{
     border:0;
@@ -36,4 +38,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+.student-login-Btn, .teacher-login-Btn{
+    padding: 10px 20px;
+    background-color: hsl(51, 100%, 50%);
+    border-radius: 5px;
+    cursor: pointer;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    color: hsl(120, 100%, 25%);
+    transition: background-color 0.3s, color 0.3s ;
+}
+
+button:hover{
+    background-color:hsl(51, 100%, 69%) ;
+    color: hsl(120, 100%, 5%);
 }
