@@ -1,6 +1,7 @@
-
+import {Routes , Route} from "react-router-dom"
 import './App.css'
 import Login from "./components/Login/Login"
+import Student from "./components/Student/Student"
 function App() {
 
 
@@ -13,7 +14,10 @@ function App() {
         <p className='about-nav'>ABOUT</p>
       </div>
     </nav>
-    <Login/>
+    <Routes>
+      <Route path="/" element={<Login/>}/>
+      <Route path="/Student" element={<Student/>}/>
+    </Routes>
     </>
   )
 }
