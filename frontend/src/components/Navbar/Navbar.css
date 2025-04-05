@@ -64,4 +64,10 @@
 }
 .side-nav-item{
   cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.side-nav-item:hover{
+  background: gold;
+  color: hsl(168, 100%, 25%) ;
 }

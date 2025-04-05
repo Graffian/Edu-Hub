@@ -1,7 +1,7 @@
 .entire-nav{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     flex-direction: column;
     gap:50px;
 }
@@ -15,6 +15,8 @@
 label{
     padding-top: 10px;
     padding-bottom: 0;
+    font-weight: 550;
+    color: hsl(168, 100%, 25%);
 }
 div{
     display: flex;
@@ -35,10 +37,14 @@ div{
     padding-top: 150px;
 }
 input{
-    outline: none;
-    background-color:hsl(168, 100%, 25%) ;
-    color:gold;
+    border: 2px solid gold;
+    outline: 0;
     border-radius: 6px;
+    background-color: #fafafa66;
+    backdrop-filter: blur(6px);
+    font: inherit;
+    padding: 10px 25px;
+    color: #232323;
 }
 img{
     display: inline-block;
@@ -67,11 +73,11 @@ img{
 }
 .course-text{
     color: hsl(168, 100%, 25%);
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .course-evaluation{
     color: hsl(168, 100%, 25%);
-    font-size: 1em;
+    font-size: 1.4em;
     margin-top: 0;
 }
 .button-div{
@@ -82,9 +88,14 @@ img{
     margin-left: 300px;
 }
 .save-button{
-    padding: 5px 30px;
+    padding: 10px 30px;
     border-radius: 5px;
+    border: 0;
+    outline: 0;
+    font: inherit;
     background-color: hsl(168, 100%, 25%) ;
     color: gold;
     cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 100px;
 }

@@ -12,7 +12,7 @@ function Login(){
         navigate("/Student")
     }
     function teacherLogin(){
-        navigate(`/Teacher/${random}`)
+        navigate(`/Teacher`)
     }
     return(
         <>
